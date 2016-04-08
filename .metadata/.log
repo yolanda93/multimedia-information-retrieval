@@ -88,3 +88,9 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.jdt.core 4 0 2016-04-08 10:30:12.753
 !MESSAGE Invalid ZIP archive: /Tess4J/lib/pdfpagecount.ps [in Tesseract4J]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-04-08 10:59:53.092
+!MESSAGE Invalid ZIP archive: /Tess4J/lib/nblibraries.properties [in Tesseract4J]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-04-08 10:59:53.163
+!MESSAGE Invalid ZIP archive: /Tess4J/lib/pdfpagecount.ps [in Tesseract4J]

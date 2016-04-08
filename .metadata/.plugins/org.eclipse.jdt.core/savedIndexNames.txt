@@ -1,18 +1,4 @@
 INDEX VERSION 1.127+/Users/renzo.verastegui/information-retrieval-multimedia/.metadata/.plugins/org.eclipse.jdt.core
-3445714114.index
-308644541.index
-80740046.index
-1550682441.index
-1767299194.index
-83695164.index
-3638317814.index
-2006056562.index
-2875113161.index
-2407305205.index
-1637903773.index
-4034398415.index
-2864861410.index
-1457096720.index
-1069140415.index
-1910814626.index
-4294559634.index
+3822681510.index
+3577888316.index
+3891756625.index

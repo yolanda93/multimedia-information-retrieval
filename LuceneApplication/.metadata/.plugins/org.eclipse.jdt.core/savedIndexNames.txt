@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+/Users/renzo.verastegui/information-retrieval-multimedia/.metadata/.plugins/org.eclipse.jdt.core
+3822681510.index
+3577888316.index
+3891756625.index

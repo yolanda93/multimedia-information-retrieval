@@ -17,6 +17,14 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <dependency>
+        	<groupId>org.json</groupId>
+        	<artifactId>json</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>commons-io</groupId>
+        	<artifactId>commons-io</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -30,6 +38,16 @@
     			<groupId>org.bytedeco.javacpp-presets</groupId>
     			<artifactId>tesseract</artifactId>
     			<version>3.03-rc1-1.0</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>org.json</groupId>
+    			<artifactId>json</artifactId>
+    			<version>20090211</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>commons-io</groupId>
+    			<artifactId>commons-io</artifactId>
+    			<version>2.4</version>
     		</dependency>
     	</dependencies>
     </dependencyManagement>

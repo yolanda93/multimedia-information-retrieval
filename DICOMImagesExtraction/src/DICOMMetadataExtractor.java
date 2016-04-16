@@ -19,7 +19,7 @@ import org.codehaus.jackson.map.ObjectWriter;
 /**
  * @author Yolanda de la Hoz, Renzo Verastegui
  */
-public class MetadataExtractor {
+public class DICOMMetadataExtractor {
 
 	private static DicomInputStream dis;
 	private boolean isSQ;

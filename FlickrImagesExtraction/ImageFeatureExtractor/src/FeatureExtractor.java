@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -14,11 +15,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.opencv.core.Core;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.MatOfFloat;
 import org.opencv.core.MatOfInt;
+import org.opencv.core.Point;
+import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
@@ -31,6 +36,7 @@ public class FeatureExtractor
 	private static long redBucket;
 	private static long greenBucket;
 	private static long blueBucket;
+	private static FileWriter jsonfile;
 
 	public static void main( String[] args )
 	{
@@ -44,15 +50,16 @@ public class FeatureExtractor
 		String imagePath = args[0];
 		String outPath = args[1];
 		System.out.println( "Opening image: " + imagePath );
+		System.out.println( "Results will be saved as a json file in : " + outPath );
 
 		/* Extract histogram, mean and mode */
-		extract(imagePath);	
+		extract(imagePath,outPath);	
 	}
 
-	
-	public static void  extract(String path) {
-		System.out.println("Path: " + path);	
-		Mat image = Imgcodecs.imread(path);
+
+	public static void  extract(String inPath, String outPath) {
+		System.out.println("Path: " + inPath);	
+		Mat image = Imgcodecs.imread(inPath);
 		showResult(image); 
 		double[]hist=calculateHist(image);
 		
@@ -60,35 +67,38 @@ public class FeatureExtractor
 		for(int i=0;i<hist.length;i++){
 			System.out.println(hist[i]);
 		}
-		
+
 		try {
-			averageColor(path);				
+			averageColor(inPath);				
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		double mode=calculateMode(hist);
+		writeJSON(inPath,outPath,hist,mode);
 		
-		calculateMode(hist);
+		drawHistogram(mode,hist);
 	}
 
 
 	public static void averageColor(String imagePath) throws IOException {
-			File input = new File(imagePath);
-			BufferedImage image = ImageIO.read(input);
-			int width = image.getWidth();
-			int height = image.getHeight();
+		File input = new File(imagePath);
+		BufferedImage image = ImageIO.read(input);
+		int width = image.getWidth();
+		int height = image.getHeight();
 
-			int count = 0;
+		int count = 0;
 
-			for(int i=0; i<height; i++){
-				for(int j=0; j<width; j++){
-					count++;
-					Color c = new Color(image.getRGB(j, i));
-				    redBucket =+ c.getRed();
-			        greenBucket =+ c.getGreen();
-			        blueBucket =+ c.getBlue();	    			           			     					
-				}
+		for(int i=0; i<height; i++){
+			for(int j=0; j<width; j++){
+				count++;
+				Color c = new Color(image.getRGB(j, i));
+				redBucket =+ c.getRed();
+				greenBucket =+ c.getGreen();
+				blueBucket =+ c.getBlue();	    			           			     					
 			}
-			System.out.println(" The average is: Red: " + redBucket +"  Green: " + greenBucket  + " Blue: " + blueBucket);					   			       		    
+		}
+		System.out.println(" The average is: Red: " + redBucket +"  Green: " + greenBucket  + " Blue: " + blueBucket);					   			       		    
 	}
 
 
@@ -124,19 +134,19 @@ public class FeatureExtractor
 	}
 
 	public static double calculateMode(double[]hist) {
-        int pos;
-        double mode=hist[0];
-        pos=0;
-        for(int i=1;i<hist.length;i++) {
-            if (hist[i]>mode) {
-            	mode=hist[i];
-                pos=i;
-            }
-        }
-        System.out.println("The mode is: "+mode);
-        return mode;
-    }
-	
+		int pos;
+		double mode=hist[0];
+		pos=0;
+		for(int i=1;i<hist.length;i++) {
+			if (hist[i]>mode) {
+				mode=hist[i];
+				pos=i;
+			}
+		}
+		System.out.println("The mode is: "+mode);
+		return mode;
+	}
+
 	public static void showResult(Mat img) {
 		Imgproc.resize(img, img, new Size(640, 480));
 		MatOfByte matOfByte = new MatOfByte();
@@ -153,5 +163,32 @@ public class FeatureExtractor
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static void drawHistogram(double mode,double [] hist) {
+      // display using standard draw
+      StdDraw.setCanvasSize(500, 100);
+	  StdDraw.setYscale(-1, mode + 1);  
+	  StdStats.plotBars(hist);
+	}
+	
+	public static void writeJSON(String imageName,String outPath,double[]hist,double mode) {
+		String averageColor = "Red: " + Double.toString(redBucket) + "," + "Blue: " + Double.toString(blueBucket) + "," + "Green: " +Double.toString(greenBucket);
+		ImageFeature features = new ImageFeature(imageName,hist,mode,averageColor);
+
+		ObjectMapper mapper = new ObjectMapper();
+		String jsonInString;
+		try {
+			jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(features);
+			System.out.println(jsonInString);
+			jsonfile = new FileWriter(outPath);
+			jsonfile.write(jsonInString);
+			jsonfile.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();	
+		}
+
+
 	}
 }

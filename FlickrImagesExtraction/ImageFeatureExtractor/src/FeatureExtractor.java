@@ -45,28 +45,33 @@ public class FeatureExtractor
 		String outPath = args[1];
 		System.out.println( "Opening image: " + imagePath );
 
-		double[]hist= extract(imagePath);
+		/* Extract histogram, mean and mode */
+		extract(imagePath);	
+	}
+
+	
+	public static void  extract(String path) {
+		System.out.println("Path: " + path);	
+		Mat image = Imgcodecs.imread(path);
+		showResult(image); 
+		double[]hist=calculateHist(image);
 		
-		Color averageColor;
+		System.out.println("The histogram is: ");
+		for(int i=0;i<hist.length;i++){
+			System.out.println(hist[i]);
+		}
+		
 		try {
-			averageColor = averageColor(imagePath);
-			System.out.println(" Red: " + averageColor.getRed() +"  Green: " + averageColor.getGreen() + " Blue: " + averageColor.getBlue());					
+			averageColor(path);				
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-	}
-
-	/* generate a 32-bar histogram for each color channel */
-	public static double[] extract(String path) {
-		System.out.println("Path: " + path);	
-		Mat image = Imgcodecs.imread(path);
-		showResult(image); 
-		return calculateHist(image);
+		calculateMode(hist);
 	}
 
 
-	public static Color averageColor(String imagePath) throws IOException {
+	public static void averageColor(String imagePath) throws IOException {
 			File input = new File(imagePath);
 			BufferedImage image = ImageIO.read(input);
 			int width = image.getWidth();
@@ -80,14 +85,10 @@ public class FeatureExtractor
 					Color c = new Color(image.getRGB(j, i));
 				    redBucket =+ c.getRed();
 			        greenBucket =+ c.getGreen();
-			        blueBucket =+ c.getBlue();	        			       		       			     					
+			        blueBucket =+ c.getBlue();	    			           			     					
 				}
 			}
-			
-			 Color averageColor = new Color(redBucket / count,
-                     greenBucket / count,
-                     blueBucket / count);	
-			return averageColor;
+			System.out.println(" The average is: Red: " + redBucket +"  Green: " + greenBucket  + " Blue: " + blueBucket);					   			       		    
 	}
 
 
@@ -122,6 +123,20 @@ public class FeatureExtractor
 		return values;
 	}
 
+	public static double calculateMode(double[]hist) {
+        int pos;
+        double mode=hist[0];
+        pos=0;
+        for(int i=1;i<hist.length;i++) {
+            if (hist[i]>mode) {
+            	mode=hist[i];
+                pos=i;
+            }
+        }
+        System.out.println("The mode is: "+mode);
+        return mode;
+    }
+	
 	public static void showResult(Mat img) {
 		Imgproc.resize(img, img, new Size(640, 480));
 		MatOfByte matOfByte = new MatOfByte();

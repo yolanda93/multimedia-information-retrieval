@@ -16,7 +16,6 @@ import org.apache.commons.io.filefilter.WildcardFileFilter;
 public class TextExtractor {
 
 	static String imagesFolder;
-	static String format;
 	static String exitFolder;
 
 	public static File[] findFilesInFolder(String path,String format){
@@ -38,15 +37,17 @@ public class TextExtractor {
 			System.exit(1);
 		}		
 
+
 		PIX image = pixRead(file.getAbsolutePath());
 		api.SetImage(image);
+		api.SetRectangle(150, 350, 1550, 2250); //(left, top250, width, height)
 		// Get OCR result
 
 		outText = api.GetUTF8Text();
 		String generatedText = outText.getString();
 
 		assertTrue(!generatedText.isEmpty());
-		//System.out.println(generatedText);
+		System.out.println(generatedText);
 		String fileName= file.getName().split("."+format)[0];
 
 		createTxtFile(generatedText, fileName,exitFolder);
@@ -82,7 +83,6 @@ public class TextExtractor {
 		{
 
 			imagesFolder =".";
-			format ="tif";
 			exitFolder=".";
 
 		}
@@ -90,11 +90,11 @@ public class TextExtractor {
 		{
 
 			imagesFolder= args[0];
-			format= args[1];
-			exitFolder= args[2];
+			exitFolder= args[1];
 
 		}
 
+		String format="tif";
 		File[] files= findFilesInFolder(imagesFolder,format);
 
 		for (File file: files){

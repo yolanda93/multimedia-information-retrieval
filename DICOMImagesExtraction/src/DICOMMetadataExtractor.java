@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.dcm4che2.data.DicomElement;
@@ -47,11 +48,13 @@ public class DICOMMetadataExtractor {
     	FileWriter jsonfile = new FileWriter(jsonname);
         ObjectMapper mapper = new ObjectMapper();
 	    ObjectWriter writer = mapper.writer();
-    	extractHeaderInfo(DicomObject,jsonfile,writer);
+        ArrayList<HeaderElement> list = new ArrayList<HeaderElement>();
+    	extractHeaderInfo(DicomObject,list);
+    	writeJSON(list,jsonfile,writer);
     }
     
     
-    public static void extractHeaderInfo(DicomObject object, FileWriter jsonfile,ObjectWriter writer) {
+    public static void extractHeaderInfo(DicomObject object,ArrayList<HeaderElement> list) throws IOException {
     	   object.remove(Tag.PixelData); // Remove pixel data
     	   Iterator iter = object.datasetIterator();
     	   while(iter.hasNext()) {
@@ -66,15 +69,15 @@ public class DICOMMetadataExtractor {
     	            if (element.hasItems()) {
     	            	
     	               System.out.println(tagAddr +" ["+  tagVR +"] "+ tagName);
-    	               HeaderElement jsonElement = new HeaderElement(tagAddr,tagVR,tagName,"");
-    	    	       writeJSON(jsonElement,jsonfile,writer);
-    	               extractHeaderInfo(element.getDicomObject(),jsonfile,writer);
+    	               list.add(new HeaderElement(tagAddr,tagVR,tagName,""));
+    	               extractHeaderInfo(element.getDicomObject(),list);
     	               continue;
     	            }
     	         }    
     	         String tagValue = object.getString(tag);  
-    	         HeaderElement jsonElement = new HeaderElement(tagAddr,tagVR,tagName,tagValue);
-    	         writeJSON(jsonElement,jsonfile,writer);
+
+    	         list.add(new HeaderElement(tagAddr,tagVR,tagName,tagValue));
+    	       
     	         System.out.println(tagAddr +" ["+ tagVR +"] "+ tagName +" ["+ tagValue+"]");
     	      } catch (Exception e) {
     	         e.printStackTrace();
@@ -85,10 +88,9 @@ public class DICOMMetadataExtractor {
     	   }  
     	}
 
-    public static void writeJSON(HeaderElement jsonElement,FileWriter jsonfile,ObjectWriter writer) throws JsonGenerationException, JsonMappingException, IOException{
-    	 String json = writer.writeValueAsString(jsonElement);   			
+    public static void writeJSON(ArrayList<HeaderElement> list,FileWriter jsonfile,ObjectWriter writer) throws JsonGenerationException, JsonMappingException, IOException{
+    	 String json = writer.writeValueAsString(list);   			
 		 jsonfile.write(json);
-		 jsonfile.write("\n");
 		 jsonfile.flush();
     }
 }

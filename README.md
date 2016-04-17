@@ -1,6 +1,6 @@
 # Information Retrieval Multimedia System
    
-The goal of this project is to implement of a basic CBIR using Lucene 
+The goal of this project is to implement a basic CBIR using Lucene 
 
 # Usage 
 
@@ -53,5 +53,3 @@ Folders:
 /DICOMImagesExtraction. 
 
 /SOLRApplication. Contains the source code to integrate indexing of DICOM images and OCR using SOLR
-
-

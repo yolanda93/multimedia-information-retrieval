@@ -12,6 +12,7 @@ The project is divided in the following scripts according to the parts in which 
                     - dataDir: The directory path with the data to be indexed.
                     - indexDir: The directory path to store the indexed data.
              2 (Searcher)
+                    - indexDir: The directory path where is stored the indexed data. 
                     - word: The word to search.
   
 ## OCRApplication 

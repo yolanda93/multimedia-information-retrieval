@@ -8,6 +8,8 @@ import static org.junit.Assert.assertTrue;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileWriter;
+import java.io.PrintWriter;
+
 import org.json.simple.JSONObject;
 
 import org.apache.commons.io.filefilter.WildcardFileFilter;
@@ -61,16 +63,18 @@ public class TextExtractor {
 
 	public static void createTxtFile(String content, String fileName, String exitFolder) throws Exception {
 		//Create text file
-		//PrintWriter writer = new PrintWriter(exitFolder+ "/"+ fileName+".json", "UTF-8");
-
+		PrintWriter writer = new PrintWriter(exitFolder+ "/"+ fileName+".txt", "UTF-8");
+		writer.println(content);
+		writer.close();
+		
 		JSONObject obj = new JSONObject();
 		obj.put("Content", content);
-		
+
 		FileWriter file = new FileWriter(exitFolder+ "/"+ fileName+".json");
 
 		file.write(obj.toJSONString());
 		file.close();
-		
+
 		System.out.println("Successfully Copied JSON Object to File...");
 		System.out.println("\nJSON Object: " + obj);
 	}

@@ -9,8 +9,11 @@ import org.apache.lucene.search.TopDocs;
 
 public class MultimediaRetrievalApp {
 
-	static String indexDir; //= "/home/yolanda/Index";
-	static String dataDir;//= "/home/yolanda/Data";
+	//1 /Users/renzo.verastegui/information-retrieval-multimedia/LuceneApplication/Data /Users/renzo.verastegui/information-retrieval-multimedia/LuceneApplication/Index
+	//2 /Users/renzo.verastegui/information-retrieval-multimedia/LuceneApplication/Index phase
+
+	static String indexDir; 
+	static String dataDir;
 	static Indexer indexer;
 	static Searcher searcher;
 
@@ -25,7 +28,7 @@ public class MultimediaRetrievalApp {
 			MultimediaRetrievalApp tester;
 			try {
 				tester = new MultimediaRetrievalApp();
-
+				System.out.println(args[0]+" "+args[1]+ " "+ args[2]);
 				if (args[0].equals("1")) {
 
 					dataDir= args[1];
@@ -65,15 +68,18 @@ public class MultimediaRetrievalApp {
 
 	private void search(String searchQuery) throws IOException, ParseException{
 		
+		
 		searcher = new Searcher(indexDir);
 		long startTime = System.currentTimeMillis();
 		TopDocs hits = searcher.search(searchQuery);
 		long endTime = System.currentTimeMillis();
 
+		System.out.println("Searched term: "+ searchQuery);
+		
 		System.out.println(hits.totalHits + " documents found. Time :" + (endTime - startTime));
 		for(ScoreDoc scoreDoc : hits.scoreDocs) {
 			Document doc = searcher.getDocument(scoreDoc);
-			System.out.println("File: " + doc.get(LuceneConstants.FILE_PATH));
+			System.out.println("File: " + doc.get(LuceneConstants.FILE_NAME));
 		}
 		searcher.close();
 	}

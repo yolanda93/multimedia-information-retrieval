@@ -21,21 +21,41 @@ Application to index and search documents in Lucene. It has to modes as it is de
 ## OCRApplication 
 Application to obtain text from images using tesseract API. The extraction is optimized using layouts and indexed using LuceneApplication described above.
 
+##### Usage:
+
      - dataDir: The directory path to read images.
      - outDir: The directory path to store the text in json format.
 
 ## ImageMetadataExtractor
 Application to extract metadata information from png images. The extracted metadata is stored using json format and indexed using LuceneApplication.
 
+##### Usage:
+
      - dataDir: The directory path to read images.
      - outDir: The directory path to store the text in json format.
 
 ## ImageFeatureExtractor
-    
+Application to extract basic color features (histogram, mean and mode) from images. The extracted metadata is stored using json format and indexed using LuceneApplication.    
+
+##### Usage:
+
      - dataDir: The directory path to read images.
      - outDir: The directory path to store the text in json format.
+     
+## DICOMImageExtractor
+Application to obtain text from image headers in DICOM format. The extracted metadata is stored using json format and indexed using LuceneApplication.    
+
+##### Usage:
+
+     - dataDir: The directory path to read DICOM files.
+     - outDir: The directory path to store the text in json format.
+
 
 ## SOLRApplication 
+Application to integrate indexing of DICOM images and OCR using Apache SOLR.
+
+##### Usage:
+
      - collection: Collection name 
      - dataDir: The directory path with source data.
 

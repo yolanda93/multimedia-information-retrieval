@@ -1,0 +1,4 @@
+﻿{
+  "image" : "/home/yolanda/workspace/metadata-extractor/test_images/beagleA.png",
+  "metadata" : [ "[PNG-IHDR] Image Width - 300","[PNG-IHDR] Image Height - 225","[PNG-IHDR] Bits Per Sample - 8","[PNG-IHDR] Color Type - True Color with Alpha","[PNG-IHDR] Compression Type - Deflate","[PNG-IHDR] Filter Method - Adaptive","[PNG-IHDR] Interlace Method - No Interlace","[PNG-sRGB] sRGB Rendering Intent - Perceptual","[PNG-gAMA] Image Gamma - 0.455","[PNG-pHYs] Pixels Per Unit X - 3780","[PNG-pHYs] Pixels Per Unit Y - 3780","[PNG-pHYs] Unit Specifier - Metres","[File] File Name - beagleA.png", "[File] File Size - 178736 bytes", "[File] File Modified Date - Fri Apr 08 09:33:45 +02:00 2016" ]
+}

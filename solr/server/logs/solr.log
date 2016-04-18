@@ -1,0 +1,760 @@
+2016-04-18 08:33:54.933 INFO  (main) [   ] o.e.j.u.log Logging initialized @1245ms
+2016-04-18 08:33:56.073 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-04-18 08:33:56.212 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/renzo.verastegui/information-retrieval-multimedia/solr/server/contexts/] at interval 0
+2016-04-18 08:33:59.256 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-04-18 08:33:59.379 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@71423665{/solr,file:///Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr-webapp/webapp/,STARTING}{/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-04-18 08:33:59.428 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1519280649@5a8e6209
+2016-04-18 08:33:59.652 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:33:59.652 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:33:59.653 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr'
+2016-04-18 08:33:59.654 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:33:59.654 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:33:59.688 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/solr.xml
+2016-04-18 08:34:00.739 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:01.154 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1652149987
+2016-04-18 08:34:01.155 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr]
+2016-04-18 08:34:01.159 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/lib to classpath: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/lib
+2016-04-18 08:34:01.384 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-04-18 08:34:02.068 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-04-18 08:34:02.084 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-04-18 08:34:02.085 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-04-18 08:34:02.089 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-04-18 08:34:02.089 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-04-18 08:34:02.418 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:02.475 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=collection, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:02.475 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core collection in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection
+2016-04-18 08:34:02.518 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=collection2, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:02.518 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core collection2 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2
+2016-04-18 08:34:02.580 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=collection3, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:02.580 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core collection3 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3
+2016-04-18 08:34:02.639 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=collection4, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:02.639 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core collection4 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4
+2016-04-18 08:34:02.718 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=DICOM, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:02.718 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core DICOM in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM
+2016-04-18 08:34:02.719 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 5 core definitions
+2016-04-18 08:34:02.741 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server
+2016-04-18 08:34:02.742 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-04-18 08:34:02.757 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2'
+2016-04-18 08:34:02.757 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3'
+2016-04-18 08:34:02.757 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection'
+2016-04-18 08:34:02.763 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:34:02.763 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:02.764 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:34:02.764 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:02.765 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:34:02.765 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:02.964 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@71423665{/solr,file:///Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr-webapp/webapp}
+2016-04-18 08:34:03.149 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@43bc63a3{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-04-18 08:34:03.152 INFO  (main) [   ] o.e.j.s.Server Started @9468ms
+2016-04-18 08:34:03.255 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 08:34:03.260 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 08:34:03.260 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 08:34:03.261 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 08:34:03.265 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 08:34:03.272 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 08:34:03.304 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 08:34:03.305 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 08:34:03.306 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 08:34:03.307 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 08:34:03.302 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.309 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 08:34:03.310 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 08:34:03.311 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 08:34:03.311 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 08:34:03.311 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 08:34:03.303 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 08:34:03.381 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 08:34:03.381 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 08:34:03.381 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.381 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:03.381 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 08:34:03.382 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 08:34:03.383 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 08:34:03.383 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 08:34:03.386 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 08:34:03.387 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 08:34:03.388 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 08:34:03.379 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 08:34:03.389 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 08:34:03.390 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 08:34:03.391 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 08:34:03.391 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 08:34:03.391 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 08:34:03.391 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 08:34:06.250 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 08:34:06.252 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 08:34:06.271 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 08:34:07.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 08:34:07.208 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 08:34:07.209 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 08:34:07.497 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [collection2] Schema name=example-data-driven-schema
+2016-04-18 08:34:07.500 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [collection3] Schema name=example-data-driven-schema
+2016-04-18 08:34:07.500 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [collection] Schema name=example-data-driven-schema
+2016-04-18 08:34:10.190 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 08:34:10.194 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 08:34:10.198 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 08:34:11.056 INFO  (qtp1791930789-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1140
+2016-04-18 08:34:12.490 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.493 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.517 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.529 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.532 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:12.611 INFO  (qtp1791930789-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=29
+2016-04-18 08:34:12.630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection'
+2016-04-18 08:34:12.632 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'collection' using configuration from instancedir /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection
+2016-04-18 08:34:12.633 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3'
+2016-04-18 08:34:12.636 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'collection3' using configuration from instancedir /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3
+2016-04-18 08:34:12.644 INFO  (qtp1791930789-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=/collection/&action=STATUS&wt=json} status=0 QTime=1
+2016-04-18 08:34:12.645 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2'
+2016-04-18 08:34:12.645 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'collection2' using configuration from instancedir /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2
+2016-04-18 08:34:12.659 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 08:34:12.663 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 08:34:12.664 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 08:34:12.673 INFO  (qtp1791930789-20) [   ] o.a.s.h.a.CoreAdminOperation core create command name=/collection/&action=CREATE&instanceDir=/collection/&wt=json
+2016-04-18 08:34:12.704 INFO  (qtp1791930789-20) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=/collection/, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-18 08:34:12.709 ERROR (qtp1791930789-20) [   ] o.a.s.c.CoreContainer Error creating core [/collection/]: Invalid core: /collection/. core names must consist entirely of periods, underscores, hyphens, and alphanumerics
+org.apache.solr.common.SolrException: Invalid core: /collection/. core names must consist entirely of periods, underscores, hyphens, and alphanumerics
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:809)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:752)
+	at org.apache.solr.handler.admin.CoreAdminOperation$1.call(CoreAdminOperation.java:134)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:351)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:153)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:229)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-18 08:34:12.713 ERROR (qtp1791930789-20) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore '/collection/': Unable to create core [/collection/] Caused by: Invalid core: /collection/. core names must consist entirely of periods, underscores, hyphens, and alphanumerics
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:786)
+	at org.apache.solr.handler.admin.CoreAdminOperation$1.call(CoreAdminOperation.java:134)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:351)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:153)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:441)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:229)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [/collection/]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:831)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:752)
+	... 32 more
+Caused by: org.apache.solr.common.SolrException: Invalid core: /collection/. core names must consist entirely of periods, underscores, hyphens, and alphanumerics
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:809)
+	... 33 more
+
+2016-04-18 08:34:12.713 INFO  (qtp1791930789-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=/collection/&action=CREATE&instanceDir=/collection/&wt=json} status=400 QTime=40
+2016-04-18 08:34:12.935 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore [[collection3] ] Opening new SolrCore at [/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3], dataDir=[/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data/]
+2016-04-18 08:34:12.936 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore [[collection2] ] Opening new SolrCore at [/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2], dataDir=[/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data/]
+2016-04-18 08:34:12.937 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [[collection] ] Opening new SolrCore at [/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection], dataDir=[/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/]
+2016-04-18 08:34:12.968 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 08:34:12.968 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 08:34:12.968 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 08:34:12.974 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore [[collection3] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.974 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore [[collection3] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.975 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore [[collection2] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.975 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore [[collection2] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.979 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 08:34:12.979 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 08:34:12.982 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [[collection] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.982 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [[collection] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:12.982 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 08:34:13.048 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data
+2016-04-18 08:34:13.049 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data/index/
+2016-04-18 08:34:13.050 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data/index
+2016-04-18 08:34:13.051 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data
+2016-04-18 08:34:13.052 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data/index/
+2016-04-18 08:34:13.158 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data
+2016-04-18 08:34:13.159 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index/
+2016-04-18 08:34:13.159 WARN  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [collection] Solr index directory '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index' doesn't exist. Creating new index...
+2016-04-18 08:34:13.158 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data/index
+2016-04-18 08:34:13.347 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index
+2016-04-18 08:34:13.409 INFO  (OldIndexDirectoryCleanupThreadForCore-collection3) [   x:collection3] o.a.s.c.SolrCore Looking for old index directories to cleanup for core collection3 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data/
+2016-04-18 08:34:13.412 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 08:34:13.417 INFO  (OldIndexDirectoryCleanupThreadForCore-collection2) [   x:collection2] o.a.s.c.SolrCore Looking for old index directories to cleanup for core collection2 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data/
+2016-04-18 08:34:13.420 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 08:34:13.503 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 08:34:13.505 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 08:34:13.723 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-04-18 08:34:13.723 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-04-18 08:34:13.728 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 08:34:13.729 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 08:34:13.729 INFO  (OldIndexDirectoryCleanupThreadForCore-collection) [   x:collection] o.a.s.c.SolrCore Looking for old index directories to cleanup for core collection in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/
+2016-04-18 08:34:14.045 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 08:34:14.084 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 08:34:14.093 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 08:34:14.183 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 08:34:14.186 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 08:34:14.228 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 08:34:14.356 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.356 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.356 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.399 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.399 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.400 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.400 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.400 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.401 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.399 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.436 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.437 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:14.579 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 08:34:14.580 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 08:34:14.580 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 08:34:14.584 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 08:34:14.584 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 08:34:14.584 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 08:34:14.583 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 08:34:14.584 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 08:34:14.585 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 08:34:14.586 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 08:34:14.586 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 08:34:14.587 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 08:34:14.588 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 08:34:14.588 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 08:34:14.610 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 08:34:14.610 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 08:34:14.611 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 08:34:14.612 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 08:34:14.612 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 08:34:14.629 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 08:34:14.631 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 08:34:14.631 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 08:34:14.632 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 08:34:14.633 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 08:34:14.661 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-04-18 08:34:14.661 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-04-18 08:34:14.704 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-04-18 08:34:14.704 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-04-18 08:34:14.804 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.s.SolrIndexSearcher Opening [Searcher@1a6d41d1[collection] main]
+2016-04-18 08:34:14.804 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.s.SolrIndexSearcher Opening [Searcher@5c00d4af[collection3] main]
+2016-04-18 08:34:14.826 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 08:34:14.828 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 08:34:14.890 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/conf
+2016-04-18 08:34:14.890 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/conf}
+2016-04-18 08:34:14.892 WARN  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.r.ManagedResourceStorage Cannot write to config directory /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/conf; switching to use InMemory storage instead.
+2016-04-18 08:34:14.914 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2016-04-18 08:34:14.914 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.SolrDeletionPolicy newest commit generation = 2
+2016-04-18 08:34:14.928 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.r.RestManager Initializing RestManager with initArgs: {}
+2016-04-18 08:34:14.939 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/conf
+2016-04-18 08:34:14.940 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 08:34:14.942 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using InMemoryStorage
+2016-04-18 08:34:14.942 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 08:34:15.029 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 08:34:15.031 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 08:34:15.138 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 08:34:15.138 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 08:34:15.201 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 08:34:15.202 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 08:34:15.208 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection3/conf/elevate.xml
+2016-04-18 08:34:15.209 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [collection]  CLOSING SolrCore org.apache.solr.core.SolrCore@4f62c97f
+2016-04-18 08:34:15.210 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+2016-04-18 08:34:15.210 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-04-18 08:34:15.210 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-04-18 08:34:15.210 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-04-18 08:34:15.214 INFO  (searcherExecutor-7-thread-1-processing-x:collection) [   x:collection] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1a6d41d1[collection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 08:34:15.214 INFO  (searcherExecutor-7-thread-1-processing-x:collection) [   x:collection] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 08:34:15.214 INFO  (searcherExecutor-7-thread-1-processing-x:collection) [   x:collection] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 08:34:15.215 INFO  (searcherExecutor-7-thread-1-processing-x:collection) [   x:collection] o.a.s.c.SolrCore [collection] Registered new searcher Searcher@1a6d41d1[collection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 08:34:15.216 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.SolrCore [collection] Closing main searcher on request.
+2016-04-18 08:34:15.217 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-04-18 08:34:15.218 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory looking to close /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index [CachedDir<<refCount=0;path=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index;done=false>>]
+2016-04-18 08:34:15.218 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/index
+2016-04-18 08:34:15.218 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory looking to close /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data [CachedDir<<refCount=0;path=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data;done=false>>]
+2016-04-18 08:34:15.218 INFO  (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data
+2016-04-18 08:34:15.218 ERROR (coreLoadExecutor-6-thread-1) [   x:collection] o.a.s.c.CoreContainer Error creating core [collection]: Error initializing QueryElevationComponent.
+org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:771)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:642)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:817)
+	at org.apache.solr.core.CoreContainer.access$000(CoreContainer.java:88)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:468)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:459)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
+	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:255)
+	at org.apache.solr.core.SolrResourceLoader.inform(SolrResourceLoader.java:675)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:751)
+	... 10 more
+Caused by: org.apache.solr.common.SolrException: QueryElevationComponent missing config file: 'elevate.xml
+either: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/conf/elevate.xml or /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/elevate.xml must exist, but not both.
+	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:232)
+	... 12 more
+2016-04-18 08:34:15.229 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4'
+2016-04-18 08:34:15.229 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:34:15.229 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:15.232 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [collection]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer$2.run(CoreContainer.java:497)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [collection]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:831)
+	at org.apache.solr.core.CoreContainer.access$000(CoreContainer.java:88)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:468)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:459)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:771)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:642)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:817)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Error initializing QueryElevationComponent.
+	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:255)
+	at org.apache.solr.core.SolrResourceLoader.inform(SolrResourceLoader.java:675)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:751)
+	... 10 more
+Caused by: org.apache.solr.common.SolrException: QueryElevationComponent missing config file: 'elevate.xml
+either: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/conf/elevate.xml or /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection/data/elevate.xml must exist, but not both.
+	at org.apache.solr.handler.component.QueryElevationComponent.inform(QueryElevationComponent.java:232)
+	... 12 more
+2016-04-18 08:34:15.266 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 08:34:15.267 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 08:34:15.275 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 08:34:15.276 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.s.SolrIndexSearcher Opening [Searcher@373a194[collection2] main]
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/conf
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/conf}
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/conf
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 08:34:15.278 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 08:34:15.277 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 08:34:15.280 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 08:34:15.279 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection2/conf/elevate.xml
+2016-04-18 08:34:15.341 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-18 08:34:15.461 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-18 08:34:15.487 INFO  (searcherExecutor-8-thread-1-processing-x:collection3) [   x:collection3] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5c00d4af[collection3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-8-thread-1-processing-x:collection3) [   x:collection3] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-8-thread-1-processing-x:collection3) [   x:collection3] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-8-thread-1-processing-x:collection3) [   x:collection3] o.a.s.c.SolrCore [collection3] Registered new searcher Searcher@5c00d4af[collection3] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 08:34:15.488 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-18 08:34:15.488 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-9-thread-1-processing-x:collection2) [   x:collection2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@373a194[collection2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C4)))}
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-9-thread-1-processing-x:collection2) [   x:collection2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 08:34:15.488 INFO  (searcherExecutor-9-thread-1-processing-x:collection2) [   x:collection2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 08:34:15.489 INFO  (searcherExecutor-9-thread-1-processing-x:collection2) [   x:collection2] o.a.s.c.SolrCore [collection2] Registered new searcher Searcher@373a194[collection2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C4)))}
+2016-04-18 08:34:15.489 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-18 08:34:15.488 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-04-18 08:34:15.491 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1531936459184930816
+2016-04-18 08:34:15.498 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.u.UpdateLog Took 10.0ms to seed version buckets with highest version 1531936459184930816
+2016-04-18 08:34:15.499 INFO  (coreLoadExecutor-6-thread-3) [   x:collection3] o.a.s.c.CoreContainer registering core: collection3
+2016-04-18 08:34:15.489 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-18 08:34:15.501 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM'
+2016-04-18 08:34:15.502 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 08:34:15.502 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr
+2016-04-18 08:34:15.519 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 08:34:15.540 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 08:34:15.541 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 08:34:15.542 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.VersionInfo Found MAX value 1531895135454887936 from Terms for _version_ in index
+2016-04-18 08:34:15.543 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 08:34:15.543 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 08:34:15.543 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 08:34:15.543 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:15.543 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 08:34:15.544 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 08:34:15.545 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/renzo.verastegui/information-retrieval-multimedia/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 08:34:15.552 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.u.UpdateLog Took 62.0ms to seed version buckets with highest version 1531895135454887936
+2016-04-18 08:34:15.552 INFO  (coreLoadExecutor-6-thread-2) [   x:collection2] o.a.s.c.CoreContainer registering core: collection2
+2016-04-18 08:34:15.577 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 08:34:15.589 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 08:34:15.636 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [collection4] Schema name=example-data-driven-schema
+2016-04-18 08:34:15.649 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 08:34:15.820 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [DICOM] Schema name=example-data-driven-schema
+2016-04-18 08:34:16.052 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 08:34:16.147 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:16.151 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:16.190 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 08:34:16.192 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4'
+2016-04-18 08:34:16.192 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'collection4' using configuration from instancedir /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4
+2016-04-18 08:34:16.193 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 08:34:16.193 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore [[collection4] ] Opening new SolrCore at [/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4], dataDir=[/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data/]
+2016-04-18 08:34:16.194 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 08:34:16.194 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore [[collection4] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:16.194 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore [[collection4] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:16.194 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 08:34:16.195 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data
+2016-04-18 08:34:16.195 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data/index/
+2016-04-18 08:34:16.270 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data/index
+2016-04-18 08:34:16.271 INFO  (OldIndexDirectoryCleanupThreadForCore-collection4) [   x:collection4] o.a.s.c.SolrCore Looking for old index directories to cleanup for core collection4 in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data/
+2016-04-18 08:34:16.271 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 08:34:16.272 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 08:34:16.309 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 08:34:16.310 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 08:34:16.312 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.313 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.314 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.314 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 08:34:16.317 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 08:34:16.318 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 08:34:16.318 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 08:34:16.320 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 08:34:16.320 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 08:34:16.332 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 08:34:16.332 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 08:34:16.355 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7}
+2016-04-18 08:34:16.356 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.SolrDeletionPolicy newest commit generation = 7
+2016-04-18 08:34:16.359 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:16.363 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 08:34:16.400 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM'
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'DICOM' using configuration from instancedir /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore [[DICOM] ] Opening new SolrCore at [/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM], dataDir=[/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data/]
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore [[DICOM] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:16.401 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore [[DICOM] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 08:34:16.402 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 08:34:16.402 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data
+2016-04-18 08:34:16.416 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data/index/
+2016-04-18 08:34:16.424 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.s.SolrIndexSearcher Opening [Searcher@1b445f98[collection4] main]
+2016-04-18 08:34:16.425 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/conf
+2016-04-18 08:34:16.425 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/conf}
+2016-04-18 08:34:16.425 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/conf
+2016-04-18 08:34:16.425 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 08:34:16.425 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 08:34:16.426 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 08:34:16.426 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 08:34:16.426 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/collection4/conf/elevate.xml
+2016-04-18 08:34:16.442 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.CachingDirectoryFactory return new directory for /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data/index
+2016-04-18 08:34:16.444 INFO  (OldIndexDirectoryCleanupThreadForCore-DICOM) [   x:DICOM] o.a.s.c.SolrCore Looking for old index directories to cleanup for core DICOM in /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data/
+2016-04-18 08:34:16.444 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 08:34:16.444 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 08:34:16.446 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 08:34:16.447 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-18 08:34:16.447 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 08:34:16.448 INFO  (searcherExecutor-22-thread-1-processing-x:collection4) [   x:collection4] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1b445f98[collection4] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C1) Uninverting(_1(6.0.0):C1) Uninverting(_2(6.0.0):C1) Uninverting(_3(6.0.0):C1) Uninverting(_4(6.0.0):C1) Uninverting(_5(6.0.0):C1)))}
+2016-04-18 08:34:16.448 INFO  (searcherExecutor-22-thread-1-processing-x:collection4) [   x:collection4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 08:34:16.448 INFO  (searcherExecutor-22-thread-1-processing-x:collection4) [   x:collection4] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 08:34:16.448 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-18 08:34:16.448 INFO  (searcherExecutor-22-thread-1-processing-x:collection4) [   x:collection4] o.a.s.c.SolrCore [collection4] Registered new searcher Searcher@1b445f98[collection4] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C1) Uninverting(_1(6.0.0):C1) Uninverting(_2(6.0.0):C1) Uninverting(_3(6.0.0):C1) Uninverting(_4(6.0.0):C1) Uninverting(_5(6.0.0):C1)))}
+2016-04-18 08:34:16.448 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-18 08:34:16.482 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.485 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.488 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.492 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.VersionInfo Found MAX value 1531897393375608832 from Terms for _version_ in index
+2016-04-18 08:34:16.495 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.u.UpdateLog Took 46.0ms to seed version buckets with highest version 1531897393375608832
+2016-04-18 08:34:16.495 INFO  (coreLoadExecutor-6-thread-1) [   x:collection4] o.a.s.c.CoreContainer registering core: collection4
+2016-04-18 08:34:16.496 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 08:34:16.499 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 08:34:16.499 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 08:34:16.500 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 08:34:16.501 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 08:34:16.502 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 08:34:16.502 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 08:34:16.507 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 08:34:16.508 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 08:34:16.511 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48e46d75; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2016-04-18 08:34:16.511 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.SolrDeletionPolicy newest commit generation = 2
+2016-04-18 08:34:16.518 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.s.SolrIndexSearcher Opening [Searcher@6b3ca0c3[DICOM] main]
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/conf
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/conf}
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/conf
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 08:34:16.519 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 08:34:16.520 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 08:34:16.520 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/renzo.verastegui/information-retrieval-multimedia/solr/server/solr/DICOM/conf/elevate.xml
+2016-04-18 08:34:16.528 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-18 08:34:16.529 INFO  (searcherExecutor-27-thread-1-processing-x:DICOM) [   x:DICOM] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6b3ca0c3[DICOM] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C109)))}
+2016-04-18 08:34:16.529 INFO  (searcherExecutor-27-thread-1-processing-x:DICOM) [   x:DICOM] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 08:34:16.529 INFO  (searcherExecutor-27-thread-1-processing-x:DICOM) [   x:DICOM] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 08:34:16.529 INFO  (searcherExecutor-27-thread-1-processing-x:DICOM) [   x:DICOM] o.a.s.c.SolrCore [DICOM] Registered new searcher Searcher@6b3ca0c3[DICOM] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C109)))}
+2016-04-18 08:34:16.529 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-18 08:34:16.530 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-18 08:34:16.532 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.VersionInfo Found MAX value 1531902310776569856 from Terms for _version_ in index
+2016-04-18 08:34:16.534 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.u.UpdateLog Took 4.0ms to seed version buckets with highest version 1531902310776569856
+2016-04-18 08:34:16.534 INFO  (coreLoadExecutor-6-thread-3) [   x:DICOM] o.a.s.c.CoreContainer registering core: DICOM

@@ -31,13 +31,11 @@ The project is divided in the following scripts according to the parts in which 
      - outDir: The directory path to store the text in json format.
 
 ## SOLRApplication 
-       
-     - Modes: 1 (Indexing DICOM images)
-              2 (Indexing OCR)
-
+     - collection: Collection name 
      - dataDir: The directory path with source data.
-     - outDir: The directory path to store data.
 
+     Run config.py:
+         python config.py dataDir collection
 
 # Project organization 
 

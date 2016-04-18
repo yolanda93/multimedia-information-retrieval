@@ -2,12 +2,14 @@
    
 The goal of this project is to implement a basic CBIR using Lucene 
 
-# Usage 
+# Applications  
 
 The project is divided in the following java applications according to the parts in which the assignment is divided (assignment.pdf)
 
 ## LuceneApplication
 Application to index and search documents in Lucene. It has to modes as it is described below with different arguments.
+
+##### Usage:
 
      - Modes: 1 (Indexer)
                     - dataDir: The directory path with the data to be indexed.

@@ -41,6 +41,7 @@ The project is divided in the following scripts according to the parts in which 
 
 Folders: 
 
+```
 /LuceneApplication. Contains the source code to index text using Lucene 
      
 /OCRApplication. Contains the source code to obtain text from images using tesseract
@@ -52,3 +53,5 @@ Folders:
 /DICOMImagesExtraction. 
 
 /SOLRApplication. Contains the source code to integrate indexing of DICOM images and OCR using SOLR
+
+```
